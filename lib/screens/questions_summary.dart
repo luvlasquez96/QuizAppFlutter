@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:quiz_app/screens/questions/quiestion_identifier.dart';
 import 'package:quiz_app/screens/questions/summary_item.dart';
 
 class QuestionsSummary extends StatelessWidget {
@@ -15,7 +14,7 @@ class QuestionsSummary extends StatelessWidget {
       child: SingleChildScrollView(
         child: Column(
           children: summaryData.map((data){
-            return SummaryItem(itemData: data);
+            return SummaryItem(itemData: data,);
           }).toList(),
         ),
       ),
